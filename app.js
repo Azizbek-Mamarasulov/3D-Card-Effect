@@ -1,10 +1,10 @@
-if(window.innerHeight < 1250 || window.innerWidth < 1250){
-    alert('error');
-}
-
 // Movement Animation to happen
 const card = document.querySelector(".card");
 const container = document.querySelector(".container");
+
+if(window.innerHeight < 1250 || window.innerWidth < 1250){
+    container.innerHTML = '<h1>Resize your browser and reload. Min height and min width should be greater than 1250px</h1>';
+}
 
 // Items
 const title = document.querySelector('.title');
